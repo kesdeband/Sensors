@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kjoseph.sensors.ui.SensorsFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/sensor_spinner_label"
+        android:id="@+id/lblSensors"
+        android:textColor="#ff2214ff"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sensorSpinner"
+        style="@style/spinner_style"
+        android:spinnerMode="dialog" />
+
+</LinearLayout>

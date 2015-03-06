@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sensorList">
+        <item>Accelerometer</item>
+        <item>Magnetic Field</item>
+        <item>Gravity</item>
+        <item>Proximity</item>
+        <item>Pressure</item>
+        <item>Temperature</item>
+        <item>Linear Acceleration</item>
+        <item>Rotation Vector</item>
+        <item>Gyroscope</item>
+        <!--<item>Global Positioning System</item>-->
+    </string-array>
+
+    <string-array name="sensorDescription">
+        <item>Measures the acceleration force in m\s2 that is applied to a device on all three physical axes (x, y, and z), including the force of gravity.</item>
+        <item>Measures the ambient geomagnetic field for all three physical axes (x, y, z) in μT.</item>
+        <item>Measures the force of gravity in m/s2 that is applied to a device on all three physical axes (x, y, z).</item>
+        <item>Measures the proximity of an object in cm relative to the view screen of a device. </item>
+        <item>Measures the ambient air pressure in hPa or mbar.</item>
+        <item>Measures the temperature of the device in degrees Celsius (°C).</item>
+        <item>Measures the acceleration force in m/s2 that is applied to a device on all three physical axes (x, y, and z), excluding the force of gravity.</item>
+        <item>Measures the orientation of a device by providing the three elements of the device\'s rotation vector.</item>
+        <item>Measures a device\'s rate of rotation in rad/s around each of the three physical axes (x, y, and z).</item>
+        <item>GPS sensor uses the GPS sensor in the device to determine the location of the device.</item>
+    </string-array>
+
+</resources>

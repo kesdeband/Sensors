@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SensorsActivity"
+    android:paddingTop="5dp"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    >
+
+    <fragment
+        android:id="@+id/fragment_sensors"
+        android:name="com.example.kjoseph.sensors.ui.SensorsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/fragment_sensors"
+        />
+
+    <FrameLayout
+        android:id="@+id/sensors_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>
