@@ -48,8 +48,6 @@ public class SensorDataActivity extends ActionBarActivity {
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this);
         mRecyclerView.setLayoutManager(mLayoutManager);
 
-
-
         new SensorEventDataTask().execute(table);
 
     }

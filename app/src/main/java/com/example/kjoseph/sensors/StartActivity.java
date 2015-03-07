@@ -51,13 +51,13 @@ public class StartActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    @Override
+    /*@Override
     public void onBackPressed() {
-        //if(this.deleteDatabase(DBContract.DATABASE_NAME)) { //Delete database on app exit
-            //Log.d("create", "Database Deleted");
+        if(this.deleteDatabase(DBContract.DATABASE_NAME)) { //Delete database on app exit
+            Log.d("create", "Database Deleted");
             doExit();
-        //}
-    }
+        }
+    }*/  // This option was removed intentionally
 
     /**
      * Exit the app if user select yes.

@@ -1,5 +1,6 @@
 package com.example.kjoseph.sensors;
 
+import android.graphics.Color;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -20,7 +21,7 @@ public class CustomRecyclerAdapter extends RecyclerView.Adapter<RecyclerViewHold
     }
 
     @Override
-    public RecyclerViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
+    public RecyclerViewHolder onCreateViewHolder(ViewGroup viewGroup, int position) {
         LayoutInflater inflater = LayoutInflater.from(viewGroup.getContext());
         View itemView = inflater.inflate(R.layout.list_item, viewGroup, false);
         return new RecyclerViewHolder(itemView);
@@ -28,6 +29,8 @@ public class CustomRecyclerAdapter extends RecyclerView.Adapter<RecyclerViewHold
 
     @Override
     public void onBindViewHolder(RecyclerViewHolder viewHolder, int i) {
+        if(i%2==0)
+            viewHolder.linearLayout.setBackgroundColor(Color.LTGRAY);
         viewHolder.dataSet.setText(String.valueOf(i));
         viewHolder.xAxis.setText(String.valueOf(sensors.get(i).getX_axis()));
         viewHolder.yAxis.setText(String.valueOf(sensors.get(i).getY_axis()));

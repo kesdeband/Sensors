@@ -25,9 +25,6 @@ import com.google.android.gms.maps.model.PolylineOptions;
 
 import java.util.ArrayList;
 
-//import com.google.android.gms.maps.model.Polyline;
-
-
 public class GPSMapsActivity extends ActionBarActivity implements
         GoogleApiClient.ConnectionCallbacks,
         GoogleApiClient.OnConnectionFailedListener,
@@ -39,7 +36,6 @@ public class GPSMapsActivity extends ActionBarActivity implements
     private TextView txtLatitude;
     private TextView txtLongitude;
     private SupportMapFragment map;
-    //private Polyline line;
     private ArrayList<LatLng> routePoints;
     private double currLatitude;
     private double currLongitude;
@@ -160,9 +156,6 @@ public class GPSMapsActivity extends ActionBarActivity implements
     private void drawLocation(Location location) {
         //Log.d("New location", location.toString());
 
-        //double prevLatitude = currLatitude;
-        //double prevLongitude = currLongitude;
-
         currLatitude = location.getLatitude();
         currLongitude = location.getLongitude();
 
@@ -176,17 +169,8 @@ public class GPSMapsActivity extends ActionBarActivity implements
             LatLng point = routePoints.get(z);
             pOptions.add(point);
         }
-        // line = map.getMap().addPolyline(pOptions);
         map.getMap().addPolyline(pOptions);
         routePoints.add(latLng);
     }
-
-    /*@Override
-    public void finish() {
-        Intent data = new Intent();
-        data.putExtra(SensorsActivity.RESULT_KEY, 0); // Data to tell which value the spinner should be set on return to parent activity
-        setResult(RESULT_OK, data);
-        super.finish();
-    }*/
 
 }

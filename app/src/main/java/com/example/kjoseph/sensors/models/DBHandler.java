@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public abstract class DBHandler extends SQLiteOpenHelper implements BaseColumns {
+public abstract class DBHandler extends SQLiteOpenHelper {
 
     protected static String DB_TABLE_NAME = "";
 

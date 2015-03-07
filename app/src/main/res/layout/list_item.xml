@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentList"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="?attr/listPreferredItemHeight">
@@ -16,7 +17,34 @@
             android:textColor="#ff2214ff"
             android:gravity="center_horizontal" />
 
-        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="X-Axis"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Y-Axis"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Z-Axis"
+            android:gravity="center_horizontal" />
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
