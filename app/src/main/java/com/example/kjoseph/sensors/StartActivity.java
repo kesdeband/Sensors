@@ -56,7 +56,7 @@ public class StartActivity extends ActionBarActivity {
         //if(this.deleteDatabase(DBContract.DATABASE_NAME)) { //Delete database on app exit
             //Log.d("create", "Database Deleted");
             doExit();
-        ///}
+        //}
     }
 
     /**
