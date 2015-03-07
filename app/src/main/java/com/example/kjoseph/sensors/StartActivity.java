@@ -9,8 +9,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.example.kjoseph.sensors.models.DBContract;
-
 
 public class StartActivity extends ActionBarActivity {
 
@@ -55,10 +53,10 @@ public class StartActivity extends ActionBarActivity {
 
     @Override
     public void onBackPressed() {
-        if(this.deleteDatabase(DBContract.DATABASE_NAME)) { //Delete database on app exit
+        //if(this.deleteDatabase(DBContract.DATABASE_NAME)) { //Delete database on app exit
             //Log.d("create", "Database Deleted");
             doExit();
-        }
+        //}
     }
 
     /**
